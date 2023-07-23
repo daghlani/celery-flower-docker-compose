@@ -1,4 +1,4 @@
-# Flower Docker Compose
+# celery flower Docker Compose
  This is a docker-compose repo to use [This](https://github.com/mher/flower/tree/master) project (docker version). This is a way to monitor your tasks on celery python projects.
 ## Usage
 
