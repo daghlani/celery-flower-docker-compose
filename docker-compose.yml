@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  flower:
+    image: mher/flower
+    container_name: flower
+    command: "celery --broker=redis://:${REDIS_PASSWORD}@${REDIS_HOST}:${REDIS_PORT}/${REDIS_CELERY_DB} flower"
+    ports:
+      - '5555:5555'
+    network: net
+
+network:
+  net:
+    external: true
